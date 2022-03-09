@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: 'Quicksand', sans-serif;
+  }
+`;
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <GlobalStyle />
   </React.StrictMode>,
   document.getElementById('root')
 );

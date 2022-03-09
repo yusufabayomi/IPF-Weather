@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: weather-app-prod
+    image: weather-app-prod
+    build:
+      context: .
+      target: production
